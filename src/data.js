@@ -9,7 +9,7 @@ export const sliderItems = [
     {
       id: 2,
       img: "https://freepngimg.com/thumb/league_of_legends/14-2-league-of-legends-png-clipart.png",
-      title: "COACHING DE TUS MOBAS FAVORITOS",
+      title: "COACHING DE LEAGUE OF LEGENDS",
       desc: "TE GUSTARIA SALIR DE TU RANGO ACUTAL? NOSOTROS PODEMOS AYUDARTE CON COACHEOS PERZONALIZADOS",
       bg: "fcf1ed",
     },
