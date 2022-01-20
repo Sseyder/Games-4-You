@@ -2,8 +2,8 @@ export const sliderItems = [
     {
       id: 1,
       img: "https://freepngimg.com/thumb/street_fighter/35134-8-street-fighter-ii-image.png",
-      title: "SUMMER SALE",
-      desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
+      title: "FIGHTING GAMES",
+      desc: "DISFRUTA DE LOS FIGHTING GAMES CON UNA AMPLIA VARIEDAD DE ELLOS.",
       bg: "f5fafd",
     },
     {
@@ -16,8 +16,8 @@ export const sliderItems = [
     {
       id: 3,
       img: "https://freepngimg.com/thumb/gta/20226-7-grand-theft-auto-v.png",
-      title: "LOUNGEWEAR LOVE",
-      desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
+      title: "ACTION GAMES",
+      desc: "MUCHOS JUEGOS DE ACCION PARA TU BIBLIOTECA DE STEAM O TU PS4.",
       bg: "fbf0f4",
     },
   ];
