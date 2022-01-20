@@ -15,7 +15,7 @@ export const sliderItems = [
     },
     {
       id: 3,
-      img: "./assets/20533-8-god-of-war-logo-image.png",
+      img: "https://freepngimg.com/thumb/gta/20226-7-grand-theft-auto-v.png",
       title: "LOUNGEWEAR LOVE",
       desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
       bg: "fbf0f4",
