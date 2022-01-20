@@ -75,13 +75,13 @@ const Navbar = () => {
             </SearchContainer>
           </Left>
           <Center>
-            <Logo>GAMES 4 YOU</Logo>
+            <Logo>GAMES 4 YOU.</Logo>
           </Center>
           <Right>
             <MenuItem>REGISTRARSE</MenuItem>
             <MenuItem>INGRESAR</MenuItem>
             <MenuItem>
-              <Badge badgeContent={1} color="primary">
+              <Badge badgeContent={0} color="primary">
                 <ShoppingCartOutlined />
               </Badge>
             </MenuItem>
