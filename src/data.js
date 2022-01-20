@@ -1,14 +1,14 @@
 export const sliderItems = [
     {
       id: 1,
-      img: "./assets/15-2-minecraft-logo-png.png",
+      img: "https://freepngimg.com/thumb/street_fighter/35134-8-street-fighter-ii-image.png",
       title: "SUMMER SALE",
       desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
       bg: "f5fafd",
     },
     {
       id: 2,
-      img: "https://i.ibb.co/DG69bQ4/2.png",
+      img: "https://freepngimg.com/thumb/minecraft/15-2-minecraft-logo-png.png",
       title: "AUTUMN COLLECTION",
       desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
       bg: "fcf1ed",
