@@ -8,9 +8,9 @@ export const sliderItems = [
     },
     {
       id: 2,
-      img: "https://freepngimg.com/thumb/minecraft/15-2-minecraft-logo-png.png",
-      title: "AUTUMN COLLECTION",
-      desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
+      img: "https://freepngimg.com/thumb/league_of_legends/14-2-league-of-legends-png-clipart.png",
+      title: "COACHING DE TUS MOBAS FAVORITOS",
+      desc: "TE GUSTARIA SALIR DE TU RANGO ACUTAL? NOSOTROS PODEMOS AYUDARTE CON COACHEOS PERZONALIZADOS",
       bg: "fcf1ed",
     },
     {
