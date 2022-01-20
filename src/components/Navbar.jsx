@@ -7,7 +7,7 @@ import styled from 'styled-components';
 
 //Inicio de Estilo de los componentes usando Styled-Components
 const Container = styled.div`
-  height: 60px;
+  height: 100px;
 `;
 
 const Wrapper = styled.div`
