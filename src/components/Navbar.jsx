@@ -1,10 +1,14 @@
+//Inicio de la Importacion de todos los componentes a usar
 import { Badge } from "@material-ui/core";
 import { Search, ShoppingCartOutlined } from "@material-ui/icons";
 import React from 'react';
 import styled from 'styled-components';
+//Fin de la Importacion de todos los componentes a usar
 
+//Inicio de Estilo de los componentes usando Styled-Components
 const Container = styled.div`
   height: 60px;
+  margin-bottom: 2px;
 `;
 
 const Wrapper = styled.div`
@@ -57,7 +61,9 @@ const MenuItem = styled.div`
   cursor: pointer;
   margin-left: 25px;
 `;
+//Fin del Estilo de los componentes usando Styled-Components
 
+//Inicio del Navbar
 const Navbar = () => {
     return (
       <Container>
@@ -76,7 +82,7 @@ const Navbar = () => {
             <MenuItem>REGISTRARSE</MenuItem>
             <MenuItem>INGRESAR</MenuItem>
             <MenuItem>
-              <Badge badgeContent={4} color="primary">
+              <Badge badgeContent={1} color="primary">
                 <ShoppingCartOutlined />
               </Badge>
             </MenuItem>
@@ -85,6 +91,8 @@ const Navbar = () => {
       </Container>
     );
   };
+  //Fin del Navbar
   
+  //Exportacion del Navbar
   export default Navbar;
 
