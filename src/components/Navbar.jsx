@@ -74,7 +74,7 @@ const Navbar = () => {
           </Center>
           <Right>
             <MenuItem>REGISTRARSE</MenuItem>
-            <MenuItem>SIGN IN</MenuItem>
+            <MenuItem>INGRESAR</MenuItem>
             <MenuItem>
               <Badge badgeContent={4} color="primary">
                 <ShoppingCartOutlined />
