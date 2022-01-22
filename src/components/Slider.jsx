@@ -3,6 +3,8 @@ import { useState } from "react";
 import styled from "styled-components";
 import { sliderItems } from "../data";
 
+//estilos del slider
+
 const Container = styled.div`
   width: 100%;
   height: 100vh;
@@ -76,6 +78,8 @@ const Button = styled.button`
   background-color: transparent;
   cursor: pointer;
 `;
+
+//JSX del SLIDER
 
 const Slider = () => {
   const [slideIndex, setSlideIndex] = useState(0);
