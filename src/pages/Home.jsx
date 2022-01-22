@@ -9,6 +9,7 @@ function Home() {
       <Navbar/>
       <Announcement/>
       <Slider/>
+      <ItemCount/>
   </div>;
 }
 
