@@ -1,0 +1,57 @@
+.detailItemCount{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.itemCuantity{
+    width: 100%;
+    border: 0.5px solid #c7c7c7;
+    text-align: center;
+}
+
+.detailItemCount button{
+    background-color: #706fd3;
+    border: none;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    cursor: pointer;
+    color:white;
+    font-weight: bold;
+}
+.itemRemove{
+    border-radius: 5px 0px 0px 5px;
+}
+.itemAdd{
+    border-radius: 0px 5px 5px 0px;
+}
+.btnContinue{
+    background-color: #3498db;
+    color: white;
+}
+.btnContinue:not([disabled]):hover {
+    background-color: #2980b9;
+}
+
+.btnConfirmCart{
+    background-color: #2ecc71;
+}
+
+.btnConfirmCart:not([disabled]):hover {
+    background-color: #27ae60;
+}
+
+.noStock{
+    font-weight: normal;
+    font-size: 18px;
+    color: #808080;
+    text-align: center;
+}
+
+.btn{
+    background-color: #706fd3;
+    border: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    color:white;
+    font-weight: bold;
+}

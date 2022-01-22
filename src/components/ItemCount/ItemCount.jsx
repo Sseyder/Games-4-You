@@ -1,49 +1,77 @@
-import React, { useState, useEffect } from "react";
-import RemoveIcon from "@material-ui/icons/Remove";
-import AddIcon from "@material-ui/icons/Add";
+import { useState } from 'react';
+import swal from 'sweetalert';
+import './ItemCount.css'
 
+const ItemCount = (props) =>{
 
-import "./ItemCount.scss";
-import { Container } from "@material-ui/core";
+    const [counterItem, setCounterItem] = useState(1);
+    const itemStock = props.stock;
 
-const ItemCount = ({ initial, min, max, setQuantity }) => {
-  const [counter, setCounter] = useState(initial);
+    const itemAdd = () => {
+            if(itemStock === 0){
+            swal({
+                title: 'No hay stock disponible',
+                icon: 'error'
+            });
+            setCounterItem(0);
+        }else{
+            if(counterItem < itemStock){
+                setCounterItem(counterItem + 1);
+            }else{
+                swal({
+                    text: 'No puedes superar el stock disponible',
+                    icon: 'warning'
+                });
+            }
+        }
+    }
 
-  const handleIncrement = () => {
-    counter < max ? setCounter(counter + 1) : console.log("Máximo alcanzado");
-  };
+    const itemRemove = () => {
+        if(itemStock === 0){
+        swal({
+            title: 'No hay stock disponible',
+            icon: 'error'
+        });
+        setCounterItem(0);
+        }else{
+        if(counterItem > 1){
+            setCounterItem(counterItem - 1);
+        }else{
+                swal({
+                    text: 'No puede añadir menos de 1 producto',
+                    icon: 'info'
+                });
+            }
+        }
+    } 
 
-  const handleDecrement = () => {
-    counter > min ? setCounter(counter - 1) : console.log("Mínimo alcanzado");
-  };
+    const onAddCart = () =>{
+        props.stock > 0 ? props.cartAdd(counterItem) : props.cartAdd(0);
+    }
 
-  useEffect(() => {
-    setQuantity(counter);
-  }, [counter, setQuantity]);
-
-  return (
-    <Container>
-      <div className="counter" style={{ width: "15rem" }}>
-      <div className="counter__content">
-        <div className="counter__content-controls">
-          <span
-            className="counter__content-controls-subtract"
-            onClick={handleDecrement}
-          >
-            <RemoveIcon />
-          </span>
-          <span className="counter__content-controls-value"> {counter} </span>
-          <span
-            className="counter__content-controls-add"
-            onClick={handleIncrement}
-          >
-            <AddIcon />
-          </span>
+    return (
+        <div className="containerItemCount">
+            <p>Stock: {props.stock}</p>
+            {
+                props.stock > 0 
+                ?
+                <>
+                    <div className="detailItemCount">
+                        <button onClick={itemRemove} className="itemRemove">-</button>                
+                        <div className="itemCuantity">
+                            <span>{counterItem}</span>
+                        </div>
+                        <button onClick={itemAdd} className="itemAdd">+</button>
+                    </div>
+                    <div className="cartAdd">
+                        <button onClick={onAddCart}>Añadir al Carrito</button>
+                    </div>
+                </>
+                :
+                <p className="noStock">Sin stock 😟</p>
+            }
         </div>
-      </div>
-    </div>
-    </Container>
-  );
-};
+    )
+}
 
 export default ItemCount;
