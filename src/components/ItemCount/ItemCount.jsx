@@ -4,6 +4,7 @@ import AddIcon from "@material-ui/icons/Add";
 
 
 import "./ItemCount.scss";
+import { Container } from "@material-ui/core";
 
 const ItemCount = ({ initial, min, max, setQuantity }) => {
   const [counter, setCounter] = useState(initial);
@@ -21,7 +22,8 @@ const ItemCount = ({ initial, min, max, setQuantity }) => {
   }, [counter, setQuantity]);
 
   return (
-    <div className="counter" style={{ width: "15rem" }}>
+    <Container>
+      <div className="counter" style={{ width: "15rem" }}>
       <div className="counter__content">
         <div className="counter__content-controls">
           <span
@@ -40,6 +42,7 @@ const ItemCount = ({ initial, min, max, setQuantity }) => {
         </div>
       </div>
     </div>
+    </Container>
   );
 };
 
