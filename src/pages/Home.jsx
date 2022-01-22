@@ -5,9 +5,9 @@ import Slider from '../components/Slider';
 
 function Home() {
   return <div>
-      <Navbar />
-      <Announcement />
-      <Slider />
+      <Navbar/>
+      <Announcement/>
+      <Slider/>
   </div>;
 }
 
